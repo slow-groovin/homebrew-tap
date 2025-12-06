@@ -1,25 +1,25 @@
 class TerminalAichat < Formula
-  desc "A terminal AI/LLM chat tool. Extremely simple and easy to use. Using OpenAI-compatible `/v1/chat/completion` API"
+  desc "A cli for AI/LLM chat in terminal. Extremely simple and easy to use. Using OpenAI-compatible `/v1/chat/completion` API"
   homepage "https://github.com/slow-groovin/terminal-aichat"
-  version "0.3.4"
+  version "0.3.5"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/slow-groovin/terminal-aichat/releases/download/v0.3.4/terminal-aichat-aarch64-apple-darwin.tar.xz"
-      sha256 "849b3e183380b5be08ea437e865b836674669b6cf10833f69413d44cc4068e82"
+      url "https://github.com/slow-groovin/terminal-aichat/releases/download/v0.3.5/terminal-aichat-aarch64-apple-darwin.tar.xz"
+      sha256 "3f5fed26f38cc9e9085e2c8e01c56cedc110ab5ae2d07a9373c36e35022852fb"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/slow-groovin/terminal-aichat/releases/download/v0.3.4/terminal-aichat-x86_64-apple-darwin.tar.xz"
-      sha256 "c545ad019dae290811777a9a8e6b2b02b716987d2800da9ef2d0622de97d59d2"
+      url "https://github.com/slow-groovin/terminal-aichat/releases/download/v0.3.5/terminal-aichat-x86_64-apple-darwin.tar.xz"
+      sha256 "b4a3d4e35feef70c7a237ddbbf0201656cb814949eafbbfed2d69eb44322e3c2"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/slow-groovin/terminal-aichat/releases/download/v0.3.4/terminal-aichat-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "0d42afea188116e3c02593aa9964a6c05322eaef4f0bd741da9714b2f43853d9"
+      url "https://github.com/slow-groovin/terminal-aichat/releases/download/v0.3.5/terminal-aichat-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "3061dc29c1a7734736789a7601478b5c5b204c27b12b50e9fdcbd127e648eb44"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/slow-groovin/terminal-aichat/releases/download/v0.3.4/terminal-aichat-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "f15160b7e2f12277ee3a17702550537a7a17e6149d05d7dbe9e872bbecf8b20e"
+      url "https://github.com/slow-groovin/terminal-aichat/releases/download/v0.3.5/terminal-aichat-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "ac85a75206199f3441aca96cb9685b6774e4aa7af8f235e339e0425dd5f5cdbe"
     end
   end
   license "MIT"
