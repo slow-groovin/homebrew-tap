@@ -1,25 +1,25 @@
 class GumRs < Formula
   desc "Super fast git multiple user config manager. A Rust remake of https://github.com/gauseen/gum"
   homepage "https://github.com/slow-groovin/gum-rs"
-  version "0.0.3"
+  version "0.0.5"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/slow-groovin/gum-rs/releases/download/v0.0.3/gum-rs-aarch64-apple-darwin.tar.xz"
-      sha256 "f829b5f3eefbe16b0e1ff3cd539a5864192531f2436b556bcc547ce4b5412510"
+      url "https://github.com/slow-groovin/gum-rs/releases/download/v0.0.5/gum-rs-aarch64-apple-darwin.tar.xz"
+      sha256 "d8aaa5812e828fee4639e8bde03a36a7ce42ba6b851578ab9a9ce9ab56804d35"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/slow-groovin/gum-rs/releases/download/v0.0.3/gum-rs-x86_64-apple-darwin.tar.xz"
-      sha256 "a2368fea6fc7a87ce33d304081b9ebe050ab6556b5c6ae6e3c2928e8b13e17fd"
+      url "https://github.com/slow-groovin/gum-rs/releases/download/v0.0.5/gum-rs-x86_64-apple-darwin.tar.xz"
+      sha256 "fe5f6af70341ffce5dba3dd18340bb5484818aa4157fe25ea9543268682067a3"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/slow-groovin/gum-rs/releases/download/v0.0.3/gum-rs-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "8df131b53233fa8821deb9d86899efb67015d09e53796595067b6ef805765676"
+      url "https://github.com/slow-groovin/gum-rs/releases/download/v0.0.5/gum-rs-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "907c5218d17195a0a12d5f83b0d874eed8fa3e9c31710a9d1686f40a3c75b151"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/slow-groovin/gum-rs/releases/download/v0.0.3/gum-rs-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "4f1234cd6b249c269718e1c98bcb27af2fb7c80bbfd458f98b02ce6689d54ebf"
+      url "https://github.com/slow-groovin/gum-rs/releases/download/v0.0.5/gum-rs-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "674c15f01532777d08cfed14ba9da74ce5e9ececaf8cae248587be82ed1a718f"
     end
   end
   license "MIT"
@@ -48,10 +48,10 @@ class GumRs < Formula
   end
 
   def install
-    bin.install "gum-rs" if OS.mac? && Hardware::CPU.arm?
-    bin.install "gum-rs" if OS.mac? && Hardware::CPU.intel?
-    bin.install "gum-rs" if OS.linux? && Hardware::CPU.arm?
-    bin.install "gum-rs" if OS.linux? && Hardware::CPU.intel?
+    bin.install "gum" if OS.mac? && Hardware::CPU.arm?
+    bin.install "gum" if OS.mac? && Hardware::CPU.intel?
+    bin.install "gum" if OS.linux? && Hardware::CPU.arm?
+    bin.install "gum" if OS.linux? && Hardware::CPU.intel?
 
     install_binary_aliases!
 
