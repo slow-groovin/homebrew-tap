@@ -1,25 +1,25 @@
 class TerminalAichat < Formula
   desc "A cli for AI/LLM chat in terminal. Extremely simple and easy to use. Using OpenAI-compatible `/v1/chat/completion` API"
   homepage "https://github.com/slow-groovin/terminal-aichat"
-  version "0.3.5"
+  version "0.4.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/slow-groovin/terminal-aichat/releases/download/v0.3.5/terminal-aichat-aarch64-apple-darwin.tar.xz"
-      sha256 "3f5fed26f38cc9e9085e2c8e01c56cedc110ab5ae2d07a9373c36e35022852fb"
+      url "https://github.com/slow-groovin/terminal-aichat/releases/download/v0.4.0/terminal-aichat-aarch64-apple-darwin.tar.xz"
+      sha256 "02ef64a62cfb9d2997f93599478bedd4347cd818badc07a9dec7818242eb8a1a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/slow-groovin/terminal-aichat/releases/download/v0.3.5/terminal-aichat-x86_64-apple-darwin.tar.xz"
-      sha256 "b4a3d4e35feef70c7a237ddbbf0201656cb814949eafbbfed2d69eb44322e3c2"
+      url "https://github.com/slow-groovin/terminal-aichat/releases/download/v0.4.0/terminal-aichat-x86_64-apple-darwin.tar.xz"
+      sha256 "2b647fa18f2dfbe5f93bb2310356e7acfbde349a61858616c62b03bf43e6982a"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/slow-groovin/terminal-aichat/releases/download/v0.3.5/terminal-aichat-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "3061dc29c1a7734736789a7601478b5c5b204c27b12b50e9fdcbd127e648eb44"
+      url "https://github.com/slow-groovin/terminal-aichat/releases/download/v0.4.0/terminal-aichat-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "bc3f419d216064a36ade934b2a7883e8338a039c0a87ad28f6a023756579f796"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/slow-groovin/terminal-aichat/releases/download/v0.3.5/terminal-aichat-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "ac85a75206199f3441aca96cb9685b6774e4aa7af8f235e339e0425dd5f5cdbe"
+      url "https://github.com/slow-groovin/terminal-aichat/releases/download/v0.4.0/terminal-aichat-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "126c0b3487fac6b610e30330f827f6da58f5b6c2b62203554abf0f17f5791f30"
     end
   end
   license "MIT"
