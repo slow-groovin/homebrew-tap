@@ -1,25 +1,25 @@
 class GumRs < Formula
   desc "Super fast git multiple user config manager. A Rust remake of https://github.com/gauseen/gum"
   homepage "https://github.com/slow-groovin/gum-rs"
-  version "0.0.5"
+  version "0.0.6"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/slow-groovin/gum-rs/releases/download/v0.0.5/gum-rs-aarch64-apple-darwin.tar.xz"
-      sha256 "d8aaa5812e828fee4639e8bde03a36a7ce42ba6b851578ab9a9ce9ab56804d35"
+      url "https://github.com/slow-groovin/gum-rs/releases/download/v0.0.6/gum-rs-aarch64-apple-darwin.tar.xz"
+      sha256 "7bafb6a5692f5e4f3d7d5c6edd11f77e8ac513e9644b7a36f134f6db6857632c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/slow-groovin/gum-rs/releases/download/v0.0.5/gum-rs-x86_64-apple-darwin.tar.xz"
-      sha256 "fe5f6af70341ffce5dba3dd18340bb5484818aa4157fe25ea9543268682067a3"
+      url "https://github.com/slow-groovin/gum-rs/releases/download/v0.0.6/gum-rs-x86_64-apple-darwin.tar.xz"
+      sha256 "e2e2e0625562e8275e5cc089c83bcb37e5386773eca5f5260480aef363b2972f"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/slow-groovin/gum-rs/releases/download/v0.0.5/gum-rs-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "907c5218d17195a0a12d5f83b0d874eed8fa3e9c31710a9d1686f40a3c75b151"
+      url "https://github.com/slow-groovin/gum-rs/releases/download/v0.0.6/gum-rs-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "2c8d7b011b0233f4e8a1661eb6c272bce87decbcb67f54c57db827733b2d4f5c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/slow-groovin/gum-rs/releases/download/v0.0.5/gum-rs-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "674c15f01532777d08cfed14ba9da74ce5e9ececaf8cae248587be82ed1a718f"
+      url "https://github.com/slow-groovin/gum-rs/releases/download/v0.0.6/gum-rs-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "62dd4b1061ac9f1128a9da1e0a5c3c702cb65d6011a279086c8ed64e1dee3394"
     end
   end
   license "MIT"
